@@ -17,7 +17,12 @@ arrayCognomi.push(cognome[0].toUpperCase() + cognome.slice(1));
 for (var i = 0; i < arrayCognomi.length; i++) {
     
     arrayCognomi.sort();
-    console.log(`${arrayCognomi[i]} è il ${i + 1}° cognome` );
+    
+    var li = document.createElement('li');
+
+    li.appendChild(document.createTextNode(`${arrayCognomi[i]} è il ${i + 1}° cognome`)) ;
+
+    document.getElementById("cognomi").appendChild(li);
     
 }
 
