@@ -9,7 +9,10 @@ var arrayCognomi = [
     "Gialli"
 ];
 
-var cognome = arrayCognomi.push(prompt("Qual è il tuo cognome?"));
+var cognome = prompt("Qual è il tuo cognome?");
+
+arrayCognomi.push(cognome[0].toUpperCase() + cognome.slice(1));
+
 
 for (var i = 0; i < arrayCognomi.length; i++) {
     
